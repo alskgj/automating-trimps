@@ -1664,3 +1664,333 @@ Unable to read VR Path Registry from C:\Users\zen\AppData\Local\openvr\openvrpat
 JavaScript warning: https://trimps.github.io/main.js?95, line 5824: unreachable code after return statement
 1512085115527	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://trimps.github.io/"
 1512085115623	Marionette	DEBUG	Received DOM event "pageshow" for "https://trimps.github.io/"
+1521725648879	geckodriver	INFO	geckodriver 0.20.0
+1521725648882	geckodriver	INFO	Listening on 127.0.0.1:39441
+1521725649893	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.SFphcbW0It5q"
+1521725650618	Marionette	INFO	Enabled via --marionette
+1521725651890	Marionette	INFO	Listening on port 46865
+1521725651918	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1521725847177	geckodriver	INFO	geckodriver 0.20.0
+1521725847180	geckodriver	INFO	Listening on 127.0.0.1:37015
+1521725848190	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.nWUnFnaELMMz"
+1521725848676	Marionette	INFO	Enabled via --marionette
+1521725849742	Marionette	INFO	Listening on port 46267
+1521725849806	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+1521726562101	geckodriver	INFO	geckodriver 0.20.0
+1521726562105	geckodriver	INFO	Listening on 127.0.0.1:56439
+1521726563114	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.0v9bJpPOvlei"
+1521726563606	Marionette	INFO	Enabled via --marionette
+1521726564726	Marionette	INFO	Listening on port 35521
+1521726564820	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+1521726867908	geckodriver	INFO	geckodriver 0.20.0
+1521726867912	geckodriver	INFO	Listening on 127.0.0.1:40197
+1521726868919	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.f5P27KUW6uqC"
+1521726869412	Marionette	INFO	Enabled via --marionette
+1521726870544	Marionette	INFO	Listening on port 45143
+1521726870624	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+1521728660349	geckodriver	INFO	geckodriver 0.20.0
+1521728660352	geckodriver	INFO	Listening on 127.0.0.1:46077
+1521728661359	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.L0ta1TZIadiN"
+1521728661838	Marionette	INFO	Enabled via --marionette
+1521728662936	Marionette	INFO	Listening on port 43239
+1521728662968	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+1521730938525	geckodriver	INFO	geckodriver 0.20.0
+1521730938528	geckodriver	INFO	Listening on 127.0.0.1:44395
+1521730939534	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.YbdPlwSZ0vVp"
+1521730940064	Marionette	INFO	Enabled via --marionette
+1521730941164	Marionette	INFO	Listening on port 41897
+1521730941248	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1521730968356	geckodriver	INFO	geckodriver 0.20.0
+1521730968359	geckodriver	INFO	Listening on 127.0.0.1:42579
+1521730969363	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.jVL8AnMN3bjT"
+1521730969894	Marionette	INFO	Enabled via --marionette
+1521730971092	Marionette	INFO	Listening on port 37151
+1521730971170	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+1521731033531	geckodriver::marionette	ERROR	Failed to stop browser process
+1521731135634	geckodriver	INFO	geckodriver 0.20.0
+1521731135638	geckodriver	INFO	Listening on 127.0.0.1:37561
+1521731136642	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.QwF5hK3p5Ncm"
+1521731137164	Marionette	INFO	Enabled via --marionette
+1521731138270	Marionette	INFO	Listening on port 42247
+1521731138352	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+1521731173056	geckodriver	INFO	geckodriver 0.20.0
+1521731173060	geckodriver	INFO	Listening on 127.0.0.1:50879
+1521731174066	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.fw7oS1CXKJz9"
+1521731174608	Marionette	INFO	Enabled via --marionette
+1521731175746	Marionette	INFO	Listening on port 40469
+1521731175782	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+1521731217210	geckodriver	INFO	geckodriver 0.20.0
+1521731217215	geckodriver	INFO	Listening on 127.0.0.1:37893
+1521731218218	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.hcIrKQqPKzlO"
+1521731218768	Marionette	INFO	Enabled via --marionette
+1521731219908	Marionette	INFO	Listening on port 41369
+1521731219926	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1521731774468	geckodriver	INFO	geckodriver 0.20.0
+1521731774472	geckodriver	INFO	Listening on 127.0.0.1:40661
+1521731775476	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.cm4bkojAPhVK"
+1521731776004	Marionette	INFO	Enabled via --marionette
+1521731777138	Marionette	INFO	Listening on port 39395
+1521731777182	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+1521732163940	geckodriver	INFO	geckodriver 0.20.0
+1521732163943	geckodriver	INFO	Listening on 127.0.0.1:55577
+1521732164953	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.qR8ZpBnuxof4"
+1521732165494	Marionette	INFO	Enabled via --marionette
+1521732166700	Marionette	INFO	Listening on port 39487
+1521732166766	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+1521732200284	geckodriver	INFO	geckodriver 0.20.0
+1521732200287	geckodriver	INFO	Listening on 127.0.0.1:40111
+1521732201292	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.A6J1h2YnvepZ"
+1521732201818	Marionette	INFO	Enabled via --marionette
+1521732202916	Marionette	INFO	Listening on port 46559
+1521732203000	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+1521732275959	geckodriver	INFO	geckodriver 0.20.0
+1521732275962	geckodriver	INFO	Listening on 127.0.0.1:46863
+1521732276967	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.J1XttpT5ovM8"
+1521732277526	Marionette	INFO	Enabled via --marionette
+1521732278666	Marionette	INFO	Listening on port 42395
+1521732278674	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+1521732394594	geckodriver	INFO	geckodriver 0.20.0
+1521732394597	geckodriver	INFO	Listening on 127.0.0.1:46901
+1521732395602	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.vwduFwLNVi1V"
+1521732396140	Marionette	INFO	Enabled via --marionette
+1521732397274	Marionette	INFO	Listening on port 43615
+1521732397308	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?2, line 5797: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?2, line 5814: unreachable code after return statement
+1522237430397	geckodriver	INFO	geckodriver 0.20.0
+1522237430406	geckodriver	INFO	Listening on 127.0.0.1:41789
+1522237431395	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.vcFuzpPFhQH2"
+1522237432188	Marionette	INFO	Enabled via --marionette
+1522237433778	Marionette	INFO	Listening on port 33951
+1522237433816	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?3, line 5880: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?3, line 5897: unreachable code after return statement
+1522237464390	geckodriver	INFO	geckodriver 0.20.0
+1522237464393	geckodriver	INFO	Listening on 127.0.0.1:33535
+1522237465397	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.lPAlgl6q4hTL"
+1522237465910	Marionette	INFO	Enabled via --marionette
+1522237467036	Marionette	INFO	Listening on port 34409
+1522237467114	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?3, line 5880: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?3, line 5897: unreachable code after return statement
+1522237622750	geckodriver	INFO	geckodriver 0.20.0
+1522237622753	geckodriver	INFO	Listening on 127.0.0.1:37071
+1522237623758	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Av4AQbZNG1eW"
+1522237624234	Marionette	INFO	Enabled via --marionette
+1522237625354	Marionette	INFO	Listening on port 44819
+1522237625374	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?3, line 5880: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?3, line 5897: unreachable code after return statement
+[Parent 5001, Gecko_IOThread] WARNING: pipe error (54): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x150080,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1522237630473	geckodriver::marionette	ERROR	Failed to stop browser process
+1522237655109	geckodriver	INFO	geckodriver 0.20.0
+1522237655112	geckodriver	INFO	Listening on 127.0.0.1:49785
+1522237656116	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.2oqdoZ81Pyx4"
+1522237656620	Marionette	INFO	Enabled via --marionette
+1522237657754	Marionette	INFO	Listening on port 46607
+1522237657822	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?3, line 5880: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?3, line 5897: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?3, line 5880: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?3, line 5897: unreachable code after return statement
+[Parent 5211, Gecko_IOThread] WARNING: pipe error (54): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1522238366656	geckodriver	INFO	geckodriver 0.20.0
+1522238366660	geckodriver	INFO	Listening on 127.0.0.1:53057
+1522238367664	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.zwf8UAn45SaA"
+1522238368146	Marionette	INFO	Enabled via --marionette
+1522238369244	Marionette	INFO	Listening on port 41907
+1522238369278	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: unknown union type
+[Parent 5687, Gecko_IOThread] WARNING: pipe error (115): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Parent 5687, Gecko_IOThread] WARNING: pipe error (113): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Parent 5687, Gecko_IOThread] WARNING: pipe error (106): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Parent 5687, Gecko_IOThread] WARNING: pipe error (102): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Parent 5687, Gecko_IOThread] WARNING: pipe error (99): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1522238369902	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 125"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:125 < onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:141 < _middleware/</<()@resource://activity-stream/lib/Store.jsm:51 < Store/this[method]()@resource://activity-stream/lib/Store.jsm:30 < uninit()@resource://activity-stream/lib/Store.jsm:153 < uninit()@resource://activity-stream/lib/ActivityStream.jsm:274 < uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:80 < shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:196 < callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4419 < observe()@resource://gre/modules/addons/XPIProvider.jsm:2279 < observe()@resource:///modules/ContentCrashHandlers.jsm:162
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1522238372828	geckodriver::marionette	ERROR	Failed to stop browser process
+1522238382958	geckodriver	INFO	geckodriver 0.20.0
+1522238382961	geckodriver	INFO	Listening on 127.0.0.1:52111
+1522238383968	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.xJSDrZy84joB"
+1522238384486	Marionette	INFO	Enabled via --marionette
+1522238385600	Marionette	INFO	Listening on port 41757
+1522238385674	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?3, line 5880: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?3, line 5897: unreachable code after return statement
+[Parent 5877, Gecko_IOThread] WARNING: pipe error (112): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Parent 5877, Gecko_IOThread] WARNING: pipe error (110): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Parent 5877, Gecko_IOThread] WARNING: pipe error (105): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Parent 5877, Gecko_IOThread] WARNING: pipe error (101): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Parent 5877, Gecko_IOThread] WARNING: pipe error (98): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1522238386376	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 125"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:125 < onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:141 < _middleware/</<()@resource://activity-stream/lib/Store.jsm:51 < Store/this[method]()@resource://activity-stream/lib/Store.jsm:30 < uninit()@resource://activity-stream/lib/Store.jsm:153 < uninit()@resource://activity-stream/lib/ActivityStream.jsm:274 < uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:80 < shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:196 < callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4419 < observe()@resource://gre/modules/addons/XPIProvider.jsm:2279 < observe()@resource:///modules/ContentCrashHandlers.jsm:162
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1522238386822	geckodriver::marionette	ERROR	Failed to stop browser process
+1522238405375	geckodriver	INFO	geckodriver 0.20.0
+1522238405378	geckodriver	INFO	Listening on 127.0.0.1:54749
+1522238406380	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.mV5Yxdp8EVdf"
+1522238406864	Marionette	INFO	Enabled via --marionette
+1522238407956	Marionette	INFO	Listening on port 36449
+1522238408006	Marionette	WARN	TLS certificate errors will be ignored for this session
+ExceptionHandler::GenerateDump cloned child ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+6236
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+[Child 6212, Chrome_ChildThread] WARNING: pipe error (26): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 6148, Chrome_ChildThread] WARNING: pipe error (40): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 6212, Chrome_ChildThread] WARNING: pipe error (25): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 6212, Chrome_ChildThread] WARNING: pipe error (23): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 6212, Chrome_ChildThread] WARNING: pipe error (22): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 6212, Chrome_ChildThread] WARNING: pipe error (21): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 6212, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 6148, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1522238408659	geckodriver::marionette	ERROR	Failed to stop browser process
+1522238451766	geckodriver	INFO	geckodriver 0.20.0
+1522238451769	geckodriver	INFO	Listening on 127.0.0.1:47119
+1522238452774	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.BLVZketcN55D"
+1522238453264	Marionette	INFO	Enabled via --marionette
+1522238454348	Marionette	INFO	Listening on port 43849
+1522238454388	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?3, line 5880: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?3, line 5897: unreachable code after return statement
+[Parent 6293, Gecko_IOThread] WARNING: pipe error (54): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x150080,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1522238468835	geckodriver	INFO	geckodriver 0.20.0
+1522238468839	geckodriver	INFO	Listening on 127.0.0.1:57523
+1522238469842	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.CTcGp1Rewn9R"
+1522238470328	Marionette	INFO	Enabled via --marionette
+1522238471472	Marionette	INFO	Listening on port 37757
+1522238471548	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?3, line 5880: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?3, line 5897: unreachable code after return statement
+1522240127180	geckodriver	INFO	geckodriver 0.20.0
+1522240127183	geckodriver	INFO	Listening on 127.0.0.1:47705
+1522240128188	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.GXYvZK42422E"
+1522240128790	Marionette	INFO	Enabled via --marionette
+1522240129992	Marionette	INFO	Listening on port 39129
+1522240130096	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?3, line 5880: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?3, line 5897: unreachable code after return statement
+[Parent 8191, Gecko_IOThread] WARNING: pipe error (54): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x150080,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1522240202564	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
+1522240202574	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1522240216464	geckodriver::marionette	ERROR	Failed to stop browser process
+1522240228179	geckodriver	INFO	geckodriver 0.20.0
+1522240228183	geckodriver	INFO	Listening on 127.0.0.1:57029
+1522240229189	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.TKq1xYrM0QEi"
+1522240229678	Marionette	INFO	Enabled via --marionette
+1522240230734	Marionette	INFO	Listening on port 36123
+1522240230800	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?3, line 5880: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?3, line 5897: unreachable code after return statement
+ExceptionHandler::GenerateDump cloned child ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+8635
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+[Child 8530, Chrome_ChildThread] WARNING: pipe error (21): Connection reset by peer: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1522240275383	geckodriver	INFO	geckodriver 0.20.0
+1522240275386	geckodriver	INFO	Listening on 127.0.0.1:53377
+1522240276387	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ynw9bZpvB7CW"
+1522240276874	Marionette	INFO	Enabled via --marionette
+1522240277962	Marionette	INFO	Listening on port 40153
+1522240277996	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://trimps.github.io/main.js?3, line 5880: unreachable code after return statement
+JavaScript warning: https://trimps.github.io/main.js?3, line 5897: unreachable code after return statement

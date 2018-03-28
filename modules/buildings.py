@@ -2,7 +2,7 @@
     modules.buildings
     ~~~~~~~~~~~~~~~~~
 
-    buys buildings, priorises storage, then housing
+    buys buildings, prioritises storage, then housing
 """
 
 import logging
@@ -11,14 +11,14 @@ from config import BUILDINGS_HOUSING, BUILDINGS_STORAGE, BUILDINGS_OTHER
 logger = logging.getLogger(__name__)
 
 
-def buildingqueue(driver):
+def building_queue(driver):
     return driver.execute_script("return game.global.buildingsQueue")
 
 
 def build(driver, building):
 
-    # check if building is already beeing built
-    queue = buildingqueue(driver)
+    # check if building is already being built
+    queue = building_queue(driver)
     if len([b for b in queue if b.startswith(building)]):
         logger.debug('returning since building is already in queue')
         return
@@ -44,7 +44,7 @@ def build_gyms(driver):
 
 
 def run(driver):
-    if len(buildingqueue(driver)) >= 5:
+    if len(building_queue(driver)) >= 5:
         driver.execute_script("setGather('buildings');")
         return
     else:
