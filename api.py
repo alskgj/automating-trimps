@@ -10,6 +10,7 @@
 import time
 import re
 import logging
+from config import BUILDINGS
 
 from selenium.webdriver import Firefox
 
@@ -18,10 +19,48 @@ from config import GAME_URL, USERNAME, PASSWORD
 logger = logging.getLogger(__name__)
 
 
+class NotAffordableError(Exception):
+    """Raised upon trying to build something that is not affordable"""
+
+
 class Trimps:
 
     def __init__(self, driver: Firefox):
         self.driver = driver
+
+    @property
+    def all_buildings(self):
+        buildings = self.driver.find_elements_by_class_name('buildingThing')
+        buildings = [Building(e) for e in buildings]
+        return buildings
+
+    def build(self, building: str):
+        """Tries to build building.
+        If building is not affordable an error will be raised"""
+        if building not in BUILDINGS:
+            logger.error(f'{building} not recognized.')
+            raise NotImplementedError
+
+        for element in self.all_buildings:
+            if element == building and element.is_affordable():
+                element.click()
+                return True
+            elif element == building and not element.is_affordable():
+                raise NotAffordableError
+
+        return False
+
+    @property
+    def fighting_unlocked(self):
+        """Returns whether we can fight"""
+        return self.driver.execute_script('return game.upgrades.Battle.done;')
+
+    @property
+    def fighting(self):
+        return self.driver.execute_script('return game.global.fighting;')
+
+    def fight(self):
+        self.driver.find_element_by_id('fightBtn').click()
 
     def login(self):
         """LOGIN:
@@ -187,3 +226,26 @@ class Trimps:
     @property
     def trimps_employed_capacity(self):
         return self._parse_trimps()['employed_capacity']
+
+
+class Building:
+    """Wrapper around building"""
+    def __init__(self, container):
+        self.container = container
+        self.name, self.amount = self.parse_text()
+
+    def parse_text(self):
+        text = self.container.text.split('\n')
+        return text[0], int(text[1])
+
+    def click(self):
+        self.container.click()
+
+    def is_affordable(self):
+        return 'thingColorCanAfford' in self.container.get_attribute('class')
+
+    def __eq__(self, other):
+        if isinstance(other, str):
+            return other == self.name
+        else:
+            return other.name == self.name
