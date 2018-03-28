@@ -4,13 +4,18 @@
 
     handles access to game ressources
 
+# TODO: Implement science lookup
+# TODO: Implement science gathering
 """
 import time
 import re
+import logging
 
 from selenium.webdriver import Firefox
 
 from config import GAME_URL, USERNAME, PASSWORD
+
+logger = logging.getLogger(__name__)
 
 
 class Trimps:
@@ -36,6 +41,37 @@ class Trimps:
         self.driver.execute_script('playFabLoginWithPlayFab();')
         time.sleep(2)
         self.driver.execute_script('playFabFinishLogin(true);')
+
+    def gather(self, activity: str):
+        """ Sets the players gathering activity
+
+        :param activity: Food, Wood, Metal, Science, Build or Trimps
+        :return:
+        """
+        activity = activity.capitalize()
+        activities = ['Food', 'Wood', 'Metal', 'Science', 'Build', 'Trimps']
+        if activity not in activities:
+            logger.error(f'gathering activity {activity} not in {activities}')
+            raise NotImplementedError
+
+        if activity == 'Build':
+            self.driver.find_element_by_id('buildingsCollectBtn').click()
+        else:
+            container = [c for c in self._playergather_containers() if activity in c.text]
+            if not container:
+                logger.warning(f'Could not switch to activity {activity}. Container not available.')
+            else:
+                container[0].find_element_by_class_name('workBtn').click()
+
+    def player_build(self):
+        """Sets the player to buildings
+        """
+        self.gather('Build')
+
+    def player_trap(self):
+        """Sets the player to trapping trimps
+        """
+        self.gather('Trimps')
 
     @property
     def building_queue(self):
@@ -77,6 +113,56 @@ class Trimps:
             'employed': int(employed[0]),
             'employed_capacity': int(employed_capacity[0])
                 }
+
+    def _parse_basic_resources(self):
+        """Parses the Food, Wood and Metal container
+        Returns {Food: (12, 100), Wood: (100, 100), Metal: (None, None)}
+        if we have 12/100 Food, 100/100 Wood, and haven't unlocked metal yet."""
+        containers = self._playergather_containers()
+        result = dict()
+        for resource in ['Food', 'Wood', 'Metal']:
+            container = [c for c in containers if resource in c.text]
+            if not container:
+                result[resource] = None, None
+                continue
+            container = container[0]
+            current = int(re.findall('(\d+) / \d+', container.text)[0])
+            max = int(re.findall('\d+ / (\d+)', container.text)[0])
+            result[resource] = current, max
+        return result
+
+    @property
+    def science(self):
+        containers = self._playergather_containers()
+        containers = [c for c in containers if 'Science' in c.text]
+        if not containers:
+            return None
+        container = containers[0]
+        return int(re.findall('(\d+)', container.text)[0])
+
+    @property
+    def wood(self):
+        return self._parse_basic_resources()['Wood'][0]
+
+    @property
+    def food(self):
+        return self._parse_basic_resources()['Food'][0]
+
+    @property
+    def metal(self):
+        return self._parse_basic_resources()['Metal'][0]
+
+    @property
+    def wood_capacity(self):
+        return self._parse_basic_resources()['Wood'][1]
+
+    @property
+    def food_capacity(self):
+        return self._parse_basic_resources()['Food'][1]
+
+    @property
+    def metal_capacity(self):
+        return self._parse_basic_resources()['Metal'][1]
 
     @property
     def trimps_breeding(self):
