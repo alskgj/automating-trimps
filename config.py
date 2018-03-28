@@ -1,5 +1,7 @@
+from os.path import join, dirname
+
 GAME_URL = "https://trimps.github.io/"
-USERNAME = "alskgj"
+USERNAME = "alskgj2"
 PASSWORD = "5sv8dIONs9qP"
 
 PRESTIGE = ['Dagadder', 'Supershield', 'Bootboost', 'Megamace', 'Axeidic', 'Greatersword', 'Hellishmet', 'Polierarm',
@@ -25,3 +27,5 @@ JOBS_RATIOS = {
 }
 
 JOBS = ['Scientist', 'Farmer', 'Lumberjack', 'Miner']
+
+GECKOPATH = join(dirname(__file__), 'geckodriver')
