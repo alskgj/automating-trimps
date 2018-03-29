@@ -8,11 +8,11 @@
 # TODO: Implement science gathering
 """
 import time
-import re
+
 import logging
 from config import BUILDINGS
 
-from selenium.webdriver import Firefox
+from selenium.webdriver import Firefox, ActionChains
 
 from config import GAME_URL, USERNAME, PASSWORD
 
@@ -27,6 +27,28 @@ class Trimps:
 
     def __init__(self, driver: Firefox):
         self.driver = driver
+
+    def _get_resources(self):
+        """Sample from game:
+        {'food': {'max': 500, 'owned': 0},
+         'fragments': {'max': -1, 'owned': 0},
+         'gems': {'max': -1, 'owned': 0},
+         'helium': {'max': -1, 'owned': 0},
+         'metal': {'max': 500, 'owned': 0},
+         'science': {'max': -1, 'owned': 0},
+         'trimps': {'employed': 0,
+                    'max': 10,
+                    'maxMod': 1,
+                    'maxSoldiers': 1,
+                    'owned': 0,
+                    'potency': 0.0085,
+                    'realMax': {},
+                    'soldiers': 0,
+                    'speed': 5,
+                    'working': 0},
+         'wood': {'max': 500, 'owned': 0}}
+         """
+        return self.driver.execute_script('return game.resources;')
 
     @property
     def all_buildings(self):
@@ -43,7 +65,7 @@ class Trimps:
 
         for element in self.all_buildings:
             if element == building and element.is_affordable():
-                element.click()
+                self.move_to_and_click_button(element.container)
                 return True
             elif element == building and not element.is_affordable():
                 raise NotAffordableError
@@ -59,12 +81,19 @@ class Trimps:
     def fighting(self):
         return self.driver.execute_script('return game.global.fighting;')
 
+    def move_to_and_click_button(self, button):
+        """from http://selenium-python.readthedocs.io/api.html
+        using action chains to prevent tooltips over fight button
+        :param button: a clickable selenium thingy
+        """
+        default_position = self.driver.find_element_by_id('food')
+        ActionChains(self.driver).move_to_element(button).click(button).move_to_element(default_position).perform()
+
     def fight(self):
-        self.driver.find_element_by_id('fightBtn').click()
+        self.move_to_and_click_button(self.driver.find_element_by_id('fightBtn'))
 
     def login(self):
         """LOGIN:
-
         set username and password, then click login, then confirm if there are conflicting saves:
         document.getElementById("loginUserName").value = 'alskgj'
         document.getElementById("loginPassword").value = '5sv8dIONs9qP'
@@ -131,101 +160,58 @@ class Trimps:
         else:
             return None
 
-    def _parse_trimps(self):
-        """Parses the trimps container"""
-        trimps = self._trimps_container()
-        if not trimps:
-            return {'amount': 0, 'capacity': 0, 'breeding': 0, 'traps': 0}
-
-        breeding = re.findall('(\d+) breeding', trimps.text) or [0]
-        amount = re.findall('(\d+) / \d+', trimps.text) or [0]
-        capacity = re.findall('\d+ / (\d+)', trimps.text) or [0]
-        traps = re.findall('Traps \((\d+)\)', trimps.text) or [0]
-        employed = re.findall('(\d+)/\d+ employed', trimps.text) or [0]
-        employed_capacity = re.findall('\d+/(\d+) employed', trimps.text) or [0]
-
-        return {
-            'amount': int(amount[0]),
-            'capacity': int(capacity[0]),
-            'breeding': int(breeding[0]),
-            'traps': int(traps[0]),
-            'employed': int(employed[0]),
-            'employed_capacity': int(employed_capacity[0])
-                }
-
-    def _parse_basic_resources(self):
-        """Parses the Food, Wood and Metal container
-        Returns {Food: (12, 100), Wood: (100, 100), Metal: (None, None)}
-        if we have 12/100 Food, 100/100 Wood, and haven't unlocked metal yet."""
-        containers = self._playergather_containers()
-        result = dict()
-        for resource in ['Food', 'Wood', 'Metal']:
-            container = [c for c in containers if resource in c.text]
-            if not container:
-                result[resource] = None, None
-                continue
-            container = container[0]
-            current = int(re.findall('(\d+) / \d+', container.text)[0])
-            max = int(re.findall('\d+ / (\d+)', container.text)[0])
-            result[resource] = current, max
-        return result
-
     @property
     def science(self):
-        containers = self._playergather_containers()
-        containers = [c for c in containers if 'Science' in c.text]
-        if not containers:
-            return None
-        container = containers[0]
-        return int(re.findall('(\d+)', container.text)[0])
+        return self._get_resources()['science']['owned']
 
     @property
     def wood(self):
-        return self._parse_basic_resources()['Wood'][0]
+        return self._get_resources()['wood']['owned']
 
     @property
     def food(self):
-        return self._parse_basic_resources()['Food'][0]
+        return self._get_resources()['food']['owned']
 
     @property
     def metal(self):
-        return self._parse_basic_resources()['Metal'][0]
+        return self._get_resources()['metal']['owned']
 
     @property
     def wood_capacity(self):
-        return self._parse_basic_resources()['Wood'][1]
+        return self._get_resources()['wood']['max']
 
     @property
     def food_capacity(self):
-        return self._parse_basic_resources()['Food'][1]
+        return self._get_resources()['food']['max']
 
     @property
     def metal_capacity(self):
-        return self._parse_basic_resources()['Metal'][1]
+        return self._get_resources()['metal']['max']
 
     @property
     def trimps_breeding(self):
-        return self._parse_trimps()['breeding']
+        return self._get_resources()['trimps']['owned'] - self._get_resources()['trimps']['employed']
 
     @property
     def trimps_amount(self):
-        return self._parse_trimps()['amount']
+        return self._get_resources()['trimps']['owned']
 
     @property
     def trimps_capacity(self):
-        return self._parse_trimps()['capacity']
+        # this is not the real max? -- seems to be without multiplicators
+        return self._get_resources()['trimps']['max']
 
     @property
     def trimps_traps(self):
-        return self._parse_trimps()['traps']
+        return self.driver.execute_script("return game.buildings['Trap'].owned;")
 
     @property
     def trimps_employed(self):
-        return self._parse_trimps()['employed']
+        return self._get_resources()['trimps']['employed']
 
     @property
-    def trimps_employed_capacity(self):
-        return self._parse_trimps()['employed_capacity']
+    def trimps_looking_for_job(self):
+        return self.driver.execute_script('return game.workspaces;')
 
 
 class Building:
@@ -236,6 +222,9 @@ class Building:
 
     def parse_text(self):
         text = self.container.text.split('\n')
+        if len(text) != 2:
+            print(text)
+            print(self.container)
         return text[0], int(text[1])
 
     def click(self):

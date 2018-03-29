@@ -1,4 +1,3 @@
 config.py
-geckodriver
+geckodriver*
 .idea/*
-geckodriver.log

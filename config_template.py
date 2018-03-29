@@ -1,4 +1,5 @@
 from os.path import join, dirname
+import sys
 
 GAME_URL = "https://trimps.github.io/"
 USERNAME = "YOUR_USERNAME_HERE"
@@ -18,6 +19,7 @@ UPGRADES = ['Miners', 'Scientists', 'Coordination', 'Speedminer', 'Speedlumber',
 BUILDINGS_HOUSING = ['Hut', 'House', 'Mansion', 'Hotel', 'Resort', 'Gateway', 'Collector', 'Warpstation']
 BUILDINGS_STORAGE = ['Barn', 'Shed', 'Forge']
 BUILDINGS_OTHER = ['Tribute']
+BUILDINGS = BUILDINGS_HOUSING + BUILDINGS_STORAGE + BUILDINGS_OTHER
 
 JOBS_RATIOS = {
     'Scientist': 0.1,
@@ -28,4 +30,8 @@ JOBS_RATIOS = {
 
 JOBS = ['Scientist', 'Farmer', 'Lumberjack', 'Miner']
 
-GECKOPATH = join(dirname(__file__), 'geckodriver')
+if sys.platform == 'win32':
+    GECKOPATH = join(dirname(__file__), 'geckodriver.exe')
+else:
+    GECKOPATH = join(dirname(__file__), 'geckodriver')
+
