@@ -23,11 +23,6 @@ def run(trimps: Trimps):
         trimps.player_build()
         return
 
-    # If no trimps are breeding and we have traps we trap them
-    if trimps.trimps_breeding < 2 and trimps.trimps_traps:
-        logger.info("Player set to trapping")
-        trimps.player_trap()
-
     # default option: gather the resource with the lowest amount stored
     resources = {
         'Food': trimps.food,
@@ -36,9 +31,3 @@ def run(trimps: Trimps):
     }
     logger.info("Player set to collecting resources")
     trimps.gather(min(resources, key=lambda key: resources[key]))
-
-
-
-
-
-

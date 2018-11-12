@@ -32,5 +32,3 @@ def run(trimps: Trimps):
         else:
             # return after building 1 building successfully
             return
-
-

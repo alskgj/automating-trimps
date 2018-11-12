@@ -2,7 +2,7 @@ from time import sleep
 from selenium import webdriver
 import logging
 from config import GECKOPATH
-from modules import upgrades, jobs, maps, gather, buildings, fight
+from modules import gather, buildings, fight
 from api import Trimps
 
 logging.basicConfig(level=logging.INFO)

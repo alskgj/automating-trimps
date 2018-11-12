@@ -106,7 +106,7 @@ def run(driver):
             driver.execute_script("return game.global.mapsActive")
         ))
 
-    #game.global.currentMapId
+    # game.global.currentMapId
 
     # game.global.mapsActive is true when running a map
     # game.global.preMapsActive is true in mapchamber

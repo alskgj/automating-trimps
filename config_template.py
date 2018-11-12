@@ -34,4 +34,3 @@ if sys.platform == 'win32':
     GECKOPATH = join(dirname(__file__), 'geckodriver.exe')
 else:
     GECKOPATH = join(dirname(__file__), 'geckodriver')
-
